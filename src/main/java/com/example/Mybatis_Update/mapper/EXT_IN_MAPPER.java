@@ -4,6 +4,7 @@ import java.security.Timestamp;
 
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
 import com.example.Mybatis_Update.bean.EXT_IN;
@@ -47,8 +48,11 @@ public interface EXT_IN_MAPPER {
 	public long updateNEW(EXT_IN in);
 	
 	
+	@Select(
+			"SELECT * FROM EXT_IN where EM_NO = #{EM_NO}"
+			)
 	
-	
+	public EXT_IN select(EXT_IN in);
 			
 
 }

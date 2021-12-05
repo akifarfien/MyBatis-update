@@ -101,7 +101,18 @@ public class EXT_IN {
 	public void setDis_loc(Double dis_loc) {
 		this.dis_loc = dis_loc;
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "EXT_IN [CASE_STATUS=" + CASE_STATUS + ", EM_NO=" + EM_NO + ", dis_cord=" + dis_cord + ", dis_loc="
+				+ dis_loc + ", T_TimeStmp=" + T_TimeStmp + ", T_NO=" + T_NO + ", CASE_STATUS_TimeStmp="
+				+ CASE_STATUS_TimeStmp + ", LAST_T_TimeStmp=" + LAST_T_TimeStmp + "]";
+	}
     
+	
+	
     
     
 
